@@ -53,7 +53,6 @@ function addNewJoke(req, res) {
         let filename = dir.length + ".json";
         let filepath = path.join(datapath, filename);
         fs.writeFileSync(filepath, JSON.stringify(joke));
-
         res.end();
     });
 }
